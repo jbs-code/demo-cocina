@@ -84,6 +84,7 @@ h1 {
 
 .nav-menu {
     width: 50%;
+    height: 80%;
     display: flex;
     justify-content: space-around;
     z-index: 100;
@@ -318,7 +319,7 @@ h1 {
 }
 
 .menu-container{
-    width: 85%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -372,9 +373,115 @@ h1 {
     margin-left: 20px;
 }
 
+/*******************/
+/*Sección contacto*/
+/*******************/
 
+.contacto{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.contacto-container{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("../img/principal3.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
 
+.contacto-shadow{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contacto-form{
+    width: 40%;
+    z-index: 10;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contacto-form input{
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom:10px;
+    border:none;
+    outline:none;
+    height: 40px;
+}
+
+.contacto-form__comentario{
+    width: 90%;
+    height: 80px;
+    border-radius: 5px;
+    border:none;
+    margin-bottom: 10px;
+}
+
+.contacto-form__botton{
+    width: 90%;
+    height: 80px;
+    background-color: rgba(71, 47, 43, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.contacto-form__botton:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.contacto-redes{
+    width: 40%;
+    z-index: 10;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contacto-redes h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contacto-redes i{
+    margin:0px 20px;
+    cursor: pointer;
+}
+
+.contacto-redes span{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.contacto-redes span a{
+    color: #fff;
+    font-style: italic;
+}
 /*******************/
 /*Responsive Design*/
 /*******************/
@@ -437,6 +544,14 @@ h1 {
         width: 250px;
         height: 125px;
     }
+
+    .contacto-form, .contacto-redes{
+        width: 100%;
+    }
+
+    .contacto-container{
+        height: auto;
+    }
 }
 
 @media screen and (max-width:850px) and (orientation:portrait) {
@@ -478,7 +593,7 @@ h1 {
     }
     .nav-menu {
         height: 75vh;
-        top: 20vh;
+        top: 10vh;
     }
     .chefs-container{
         height: 90%;
