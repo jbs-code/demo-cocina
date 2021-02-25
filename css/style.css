@@ -208,7 +208,7 @@ h1 {
 
 .chef-article {
     width: 30%;
-    height: 90%;
+    /*height: 90%;*/
     text-align: center;
     border-right:2px solid rgb(71, 47, 43);
     border-bottom:2px solid rgb(71, 47, 43);
@@ -217,8 +217,10 @@ h1 {
 }
 
 .chefs-foto {
-    width: 75%;
-    height: 80%;
+    /*width: 75%;
+    height: 80%;*/
+    width: 250px;
+    height: 358px;
     margin: auto;
     position: relative;
     overflow: hidden;
@@ -493,9 +495,6 @@ h1 {
     .conocenos-img {
         height: 70%;
     }
-    .chef-article {
-        height: 60%;
-    }
 }
 
 @media screen and (max-width:850px) {
@@ -558,12 +557,12 @@ h1 {
     .conocenos-img {
         height: 80%;
     }
-    .chef-article {
+    .chefs-container{
         height: 50%;
     }
     .chefs-foto {
-        width: 70%;
-        height: 50%;
+        width: 150px;
+        height: 216px;
     }
     .rs-chef {
         margin: 0px 10px;
@@ -579,7 +578,7 @@ h1 {
         height: auto;
     }
     .chef-article {
-        width: 90%;
+        width: 80%;
         margin-bottom: 30px;
     }
 }
@@ -595,19 +594,21 @@ h1 {
         height: 75vh;
         top: 10vh;
     }
-    .chefs-container{
-        height: 90%;
+    .chefs, .chefs-container{
+        height: auto;
     }
-    .chef-article{
-        height: 80%;
+    .chefs-container{
+        margin-bottom: 50px;
     }
     .chefs-foto{
-        height: 50%;
+        width: 150px;
+        height: 216px;
     }
     .rs-chef{
         margin: 0px 10px;
     }
-    .chefs-foto img{
-        width: 70%;
+
+    .clientes{
+        margin-bottom: 50px;
     }
 }
